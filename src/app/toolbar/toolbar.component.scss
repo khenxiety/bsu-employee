@@ -1,0 +1,27 @@
+.nav-cont{
+    background-color: #fff;
+}
+
+
+.navbar{
+    position: sticky;
+    padding: 10px;
+    margin: 0;
+    background-color: white;
+    align-items: center;
+    min-width: 100%;
+    height: max-content;
+}
+.username {
+    margin-right: 25px;
+}
+.dropdown-item{
+    cursor: pointer;
+
+}
+@media (max-width: 575.98px) { 
+    .username {
+        margin-right: 0;
+}
+}
+

@@ -1,0 +1,42 @@
+mat-dialog-content{
+    padding: 1em;
+    overflow-y: scroll;
+    height:80vh;
+}
+
+
+
+.form-group{
+    // display: flex;
+    // align-items: center;
+    // justify-content: space-between;
+
+    gap: 10px;
+}
+#name{
+    text-transform: uppercase;
+}
+label{
+    position: relative;
+
+
+
+    .note{
+        position: absolute;
+        bottom: -20px;
+        transform: translate(100%, 0);
+       
+        padding: .3em;
+        border: .5px solid #ccc;
+        font-size: 0.8em;
+        color: rgb(56, 56, 56);
+        background-color: rgb(233, 233, 233);
+
+        display: none;
+    }
+
+
+    .note.open{
+        display: block;
+    }
+}

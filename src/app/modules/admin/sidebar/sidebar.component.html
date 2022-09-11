@@ -1,0 +1,114 @@
+
+<div class="side-bar d-flex flex-column flex-shrink-0 p-2 text-dark" style="width: 320px;">
+  <div class="sidebar rounded p-3 text-white" style="height: 100%; background-color: #ff3e3e;">
+    <a href="/" class="d-flex justify-content-center align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+      
+      <span class="fs-4 ml-5 text-white">Admin Dashboard</span>
+      
+    </a>
+    <hr>
+    <ul class="nav nav-pills flex-column mb-auto">
+      <li class="nav-item">
+        <a routerLink="./admin-dash" routerLinkActive="active" class="nav-link text-white" aria-current="page">
+        <mat-icon class="menu-icons" aria-hidden="false" aria-label="Example home icon">space_dashboard</mat-icon>
+         <span class="menu"> Dashboard</span>
+        </a>
+      </li>
+      <!-- <li>
+        <a routerLink="./faculty-list" routerLinkActive="active" class="nav-link text-white">
+            <mat-icon  class="menu-icons" aria-hidden="false" aria-label="Example home icon">supervised_user_circle</mat-icon>
+            <span class="menu">Faculty List</span>
+        </a>
+      </li> -->
+      <div class="accordion text-white" id="faculty-list" >
+        <div class="accordion-item text-white">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button text-whitecollapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faculty" aria-expanded="false" aria-controls="collapseThree">
+              <mat-icon  class="menu-icons" aria-hidden="false" aria-label="Example home icon">supervised_user_circle</mat-icon>
+              <span class="menu text-white">Teaching Personnel</span>
+            </button>
+          </h2>
+          <div id="faculty" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faculty-list">
+            <div class="accordion-body">
+            <li class="nav-item">
+                  <a class="nav-link accordion-link text-white" routerLink="./faculty-list/all-info" routerLinkActive="active">
+                    <span>Permanent Teaching Staff</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link accordion-link text-white" routerLink="./faculty-list/personal-info" routerLinkActive="active">
+                    <span>Temporary Teaching Staff</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link accordion-link text-white" routerLink="./faculty-list/higher-education" routerLinkActive="active">
+                    <span>Guest Lecturer</span>
+                  </a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <li>
+        <a routerLink="./job-personnel-list" routerLinkActive="active" class="nav-link text-white">
+            <mat-icon  class="menu-icons" aria-hidden="false" aria-label="Example home icon">supervised_user_circle</mat-icon>
+            <span class="menu">Job Personnel List</span>
+        </a>
+
+      </li> -->
+      <div class="accordion text-white" id="job-personnel-list" >
+        <div class="accordion-item text-white">
+          <h2 class="accordion-header" id="headingThree">
+            <button class="accordion-button text-whitecollapsed" type="button" data-bs-toggle="collapse" data-bs-target="#job" aria-expanded="false" aria-controls="collapseThree">
+              <mat-icon  class="menu-icons" aria-hidden="false" aria-label="Example home icon">supervised_user_circle</mat-icon>
+
+                <span class="menu text-white">Non-Teaching Personnel</span>
+            </button>
+          </h2>
+          <div id="job" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#job-personnel-list">
+            <div class="accordion-body">
+            <li class="nav-item">
+                  <a class="nav-link accordion-link text-white" routerLink="./job-personnel-list/all-info" routerLinkActive="active">
+                    <span>Permanent Non teaching</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link accordion-link text-white" routerLink="./job-personnel-list/personal-info" routerLinkActive="active">
+                    <span>Casual Non Teaching</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link accordion-link text-white" routerLink="./job-personnel-list/higher-education" routerLinkActive="active">
+                    <span>Job Orders</span>
+                  </a>
+                </li>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <li>
+        <a routerLink="./settings" routerLinkActive="active" class="nav-link text-white">
+            <mat-icon  class="menu-icons" aria-hidden="false" aria-label="Example home icon">settings</mat-icon>
+          <span class="menu">Settings</span>
+        </a>
+      </li>
+
+     
+      <li>
+        <a (click)="signout()" class="nav-link text-white " style="cursor: pointer;">
+            <mat-icon  class="menu-icons" aria-hidden="false" aria-label="Example home icon">subdirectory_arrow_right</mat-icon>
+          <span class="menu">Sign Out</span>
+        </a>
+      </li>
+      
+
+    
+    
+    </ul>
+
+
+  </div>
+    
+  </div>
